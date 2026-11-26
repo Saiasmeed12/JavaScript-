@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execution Context Example</title>
+</head>
+<body>
+    <h1>HELLO FROM EXECUTION CONTEXT</h1>
+    <script>
+        let a=10;
+        console.log(a);
+        var b=20;
+        display(b);
+
+        function display(b){
+            let c=30;
+            let d= show();
+            return c+d+b;
+        }
+
+        function show(){
+            return 100;
+        }
+    </script>
+    
+</body>
+</html>
